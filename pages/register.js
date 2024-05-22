@@ -93,7 +93,7 @@ const register = () => {
 							type='submit'
 							className='bg-[#FFD95A] p-3 font-medium hover:bg-[#C07F00] hover:text-[#FFF8DE] mb-3 rounded-md'
 						>
-							REGISTER
+							INSCRIPTION
 						</button>
 						<p className='text-center'>
 						Déjà un compte ?{" "}
@@ -109,7 +109,17 @@ const register = () => {
 						</p>
 					</div>
 				</div>
-				
+				<div className='register md:w-[40%] h-[100vh] relative'>
+					<div className='absolute bottom-5 right-5'>
+						<a
+							href='https://bricenda.net'
+							target='_blank'
+							className='text-gray-100'
+						>
+							Adapté par BN
+						</a>
+					</div>
+				</div>
 			</main>
 		</div>
 	);

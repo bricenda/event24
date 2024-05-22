@@ -65,7 +65,7 @@ const login = () => {
 							type='submit'
 							className='bg-[#FFD95A] p-3 font-medium hover:bg-[#C07F00] hover:text-[#FFF8DE] mb-3 rounded-md'
 						>
-							SIGN IN
+							CONNEXION
 						</button>
 						<p className='text-center'>
 						Pas encore de compte ?{" "}
@@ -81,7 +81,17 @@ const login = () => {
 						</p>
 					</div>
 				</div>
-				
+				<div className='login md:w-[40%] h-[100vh] relative'>
+					<div className='absolute bottom-5 right-5'>
+						<a
+							href='https://bricenda.net'
+							target='_blank'
+							className='text-gray-100'
+						>
+							Adapté par BN
+						</a>
+					</div>
+				</div>
 			</main>
 		</div>
 	);
