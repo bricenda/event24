@@ -13,19 +13,17 @@ const Nav = () => {
 					className='text-xl font-bold text-gray-300
             '
 				>
-					EventTiz
+					Angle360 Event
 				</h1>
 			</Link>
 			<div className='md:flex items-center justify-between hidden space-x-8'>
 				<Link href='/login' className=' text-gray-400 hover:text-white'>
-					Login
+					Se connecter
 				</Link>
 				<Link href='/register' className='text-gray-400 hover:text-white'>
-					Register
+					S'inscrire
 				</Link>
-				<a href='https://github.com/dha-stix' target='_blank'>
-					<BsGithub className='text-gray-400 text-2xl hover:text-[#C07F00]' />
-				</a>
+				
 			</div>
 			<div className='md:hidden block'>
 				<GiHamburgerMenu
@@ -43,10 +41,10 @@ const Nav = () => {
 					</div>
 					<div className='flex w-full flex-col space-y-8'>
 						<Link href='/login' className='text-white hover:text-[#C07F00]'>
-							Login
+							Se connecter
 						</Link>
 						<Link href='/register' className='text-white hover:text-[#C07F00]'>
-							Register
+							S'inscrire
 						</Link>
 						<div className='flex items-center space-x-6'>
 							<a href='https://github.com/dha-stix' target='_blank'>

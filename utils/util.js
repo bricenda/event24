@@ -149,35 +149,35 @@ export const firebaseCreateUser = (email, password, router) => {
 	createUserWithEmailAndPassword(auth, email, password)
 		.then((userCredential) => {
 			const user = userCredential.user;
-			successMessage("Account created 🎉");
+			successMessage("Compte créé 🎉");
 			router.push("/login");
 		})
 		.catch((error) => {
 			console.error(error);
-			errorMessage("Account creation declined ❌");
+			errorMessage("Création de compte refusée ❌");
 		});
 };
 export const firebaseLoginUser = (email, password, router) => {
 	signInWithEmailAndPassword(auth, email, password)
 		.then((userCredential) => {
 			const user = userCredential.user;
-			successMessage("Authentication successful 🎉");
+			successMessage("Authentification réussie 🎉");
 			router.push("/dashboard");
 		})
 		.catch((error) => {
 			console.error(error);
-			errorMessage("Incorrect Email/Password ❌");
+			errorMessage("Email/mot de passe incorrect ❌");
 		});
 };
 
 export const firebaseLogOut = (router) => {
 	signOut(auth)
 		.then(() => {
-			successMessage("Logout successful! 🎉");
+			successMessage("Déconnexion réussie ! 🎉");
 			router.push("/");
 		})
 		.catch((error) => {
-			errorMessage("Couldn't sign out ❌");
+			errorMessage("Impossible de se déconnecter ❌");
 		});
 };
 
@@ -244,7 +244,7 @@ export const registerAttendee = async (
 			});
 			const flierURL = firebaseEvent.flier_url
 				? firebaseEvent.flier_url
-				: "No flier for this event";
+				: "Pas de flyer pour cet événement";
 			sendEmail(
 				name,
 				email,
@@ -260,7 +260,7 @@ export const registerAttendee = async (
 			);
 		} else {
 			setLoading(false);
-			errorMessage("User already registered ❌");
+			errorMessage("Utilisateur déjà enregistré ❌");
 		}
 	}
 };
@@ -271,9 +271,9 @@ export const deleteEvent = async (id) => {
 	const imageRef = ref(storage, `events/${id}/image`);
 	deleteObject(imageRef)
 		.then(() => {
-			console.log("Deleted successfully");
+			console.log("Suppression réussie");
 		})
 		.catch((error) => {
-			console.error("Image does not exist");
+			console.error("Image inexistante");
 		});
 };
