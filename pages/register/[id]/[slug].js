@@ -52,22 +52,22 @@ const RegisterPage = ({ event }) => {
 	return (
 		<div>
 			<Head>
-				<title>{`${event.title} | EventTiz`}</title>
+				<title>{`${event.title} | Angle360 Event`}</title>
 				<meta
 					name='description'
-					content='An event ticketing system built with NextJS and Firebase'
+					content='Un système de billetterie événementielle'
 				/>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className='w-full flex items-center justify-between min-h-[100vh] relative'>
 				<div className='md:w-[60%] w-full flex flex-col items-center justify-center min-h-[100vh] px-[30px] py-[30px] relative'>
-					<h2 className='text-2xl font-medium mb-3'>Get your ticket 🎉</h2>
+					<h2 className='text-2xl font-medium mb-3'>Obtenez votre ticket 🎉</h2>
 					<form
 						className='w-full flex flex-col justify-center'
 						onSubmit={handleSubmit}
 					>
-						<label htmlFor='name'>Full name</label>
+						<label htmlFor='name'>Nom complet</label>
 						<div className='w-full relative'>
 							<input
 								type='text'
@@ -80,7 +80,7 @@ const RegisterPage = ({ event }) => {
 							<FaUserAlt className=' absolute left-4 top-3 text-gray-300' />
 						</div>
 
-						<label htmlFor='email'>Email address</label>
+						<label htmlFor='email'>Email</label>
 						<div className='w-full relative'>
 							<input
 								type='email'
@@ -96,7 +96,7 @@ const RegisterPage = ({ event }) => {
 							type='submit'
 							className='bg-[#FFD95A] p-3 font-medium hover:bg-[#C07F00] hover:text-[#FFF8DE] mb-3 rounded-md'
 						>
-							GET TICKET
+							RESERVER
 						</button>
 					</form>
 					<div className='absolute bottom-5 left-5'>
@@ -106,25 +106,15 @@ const RegisterPage = ({ event }) => {
 						</p>
 					</div>
 				</div>
-				<div className='login md:w-[40%] h-[100vh] relative'>
-					<div className='absolute bottom-5 right-5'>
-						<a
-							href='https://github.com/dha-stix'
-							target='_blank'
-							className='text-gray-100'
-						>
-							Built by David Asaolu
-						</a>
-					</div>
-				</div>
+				
 				{success && (
 					<div className='w-full h-[100vh] dim absolute top-0 flex items-center justify-center z-40'>
 						<div className='w-[400px] bg-white h-[300px] flex items-center justify-center flex-col rounded-md shadow-[#FFD95A] shadow-md'>
 							<h2 className='text-2xl font-extrabold mb-4 text-center'>
-								Registered Successfully! 🎉
+							Inscription réussie ! 🎉
 							</h2>
 							<p className='text-center mb-6'>
-								Check your email for your ticket and event information.
+							Vérifiez votre e-mail pour recevoir votre ticket et les informations relatives à l'événement.
 							</p>
 							<button
 								className='px-4 py-2 bg-[#FFD95A] rounded-md'

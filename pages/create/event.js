@@ -63,10 +63,10 @@ const event = () => {
 	return (
 		<div>
 			<Head>
-				<title>Create New Event | EventTiz</title>
+				<title>Créer un nouvel événement | Angle360 Event</title>
 				<meta
 					name='description'
-					content='An event ticketing system built with NextJS and Firebase'
+					content='Un système de billetterie événementielle'
 				/>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
@@ -80,7 +80,7 @@ const event = () => {
 				</div>
 
 				<form className='flex flex-col' onSubmit={handleSubmit}>
-					<label htmlFor='title'>Title</label>
+					<label htmlFor='title'>Titre</label>
 					<input
 						name='title'
 						type='text'
@@ -113,7 +113,7 @@ const event = () => {
 							/>
 						</div>
 					</div>
-					<label htmlFor='venue'>Venue</label>
+					<label htmlFor='venue'>Lieu</label>
 					<input
 						name='venue'
 						type='text'
@@ -121,21 +121,21 @@ const event = () => {
 						required
 						value={venue}
 						onChange={(e) => setVenue(e.target.value)}
-						placeholder='Plot Address, Lagos, Nigeria'
+						placeholder='Adresse, Cocody, Abidjan'
 					/>
 					<label htmlFor='description'>
-						Event Description <span className='text-gray-500'>(optional)</span>
+						Description <span className='text-gray-500'>(optionnel)</span>
 					</label>
 					<textarea
 						name='description'
 						rows={2}
 						className='border-[1px] py-2 px-4 rounded-md mb-3'
-						placeholder='Any information or details about the event'
+						placeholder='Toute information ou détail utile'
 						value={description}
 						onChange={(e) => setDescription(e.target.value)}
 					/>
 					<label htmlFor='note'>
-						Note to Attendees <span className='text-gray-500'>(optional)</span>
+					Note aux participants <span className='text-gray-500'>(optionnel)</span>
 					</label>
 					<textarea
 						name='note'
@@ -143,10 +143,10 @@ const event = () => {
 						value={note}
 						onChange={(e) => setNote(e.target.value)}
 						className='border-[1px] py-2 px-4 rounded-md mb-3'
-						placeholder='Every attendee must take note of this'
+						placeholder='Chaque participant devra en tenir compte'
 					/>
 					<label htmlFor='flier'>
-						Event Flier <span className='text-gray-500'>(optional)</span>
+					Flyer de l'événement <span className='text-gray-500'>(optionnel)</span>
 					</label>
 					<input
 						name='flier'
@@ -156,10 +156,10 @@ const event = () => {
 						onChange={handleFileReader}
 					/>
 					{buttonClicked ? (
-						<Loading title='May take longer time for image uploads' />
+						<Loading title='Le téléchargement des images pourrait mettre du temps' />
 					) : (
 						<button className='px-4 py-2 bg-[#C07F00] w-[200px] mt-3 text-white rounded-md'>
-							Create Event
+							Créer l'événement
 						</button>
 					)}
 				</form>

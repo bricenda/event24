@@ -8,10 +8,10 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>EventTiz</title>
+				<title>Angle360 Event</title>
 				<meta
 					name='description'
-					content='An event ticketing system built with NextJS and Firebase'
+					content='Un système de billetterie événementielle'
 				/>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />

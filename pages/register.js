@@ -25,10 +25,10 @@ const register = () => {
 	return (
 		<div>
 			<Head>
-				<title>Register | EventTiz</title>
+				<title>Inscription | Angle360 Event</title>
 				<meta
 					name='description'
-					content='An event ticketing system built with NextJS and Firebase'
+					content='Un système de billetterie événementielle'
 				/>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
@@ -36,13 +36,13 @@ const register = () => {
 			<main className='w-full flex items-center justify-between min-h-[100vh]'>
 				<div className='md:w-[60%] w-full flex flex-col items-center justify-center min-h-[100vh] px-[30px] py-[30px] relative'>
 					<Link href='/'>
-						<h2 className='text-2xl font-medium mb-6'>Create an account</h2>
+						<h2 className='text-2xl font-medium mb-6'>Créer un compte</h2>
 					</Link>
 					<form
 						className='w-full flex flex-col justify-center'
 						onSubmit={handleSubmit}
 					>
-						<label htmlFor='email'>Email address</label>
+						<label htmlFor='email'>Email</label>
 						<div className='w-full relative'>
 							<input
 								type='email'
@@ -54,7 +54,7 @@ const register = () => {
 							/>
 							<HiMail className=' absolute left-4 top-3 text-gray-300 text-xl' />
 						</div>
-						<label htmlFor='password'>Password</label>
+						<label htmlFor='password'>Mot de passe</label>
 						<div className='w-full relative'>
 							<input
 								type='password'
@@ -70,7 +70,7 @@ const register = () => {
 								<AiFillCheckCircle className=' absolute right-4 top-3 text-green-500 text-xl' />
 							)}
 						</div>
-						<label htmlFor='cpassword'>Confirm Password</label>
+						<label htmlFor='cpassword'>Confirmer le mot de passe</label>
 						<div className='w-full relative'>
 							<input
 								type='password'
@@ -87,7 +87,7 @@ const register = () => {
 							)}
 						</div>
 						{password !== cpassword && (
-							<p className='text-red-500 mb-2'>Password does not match</p>
+							<p className='text-red-500 mb-2'>Le mot de passe ne correspond pas</p>
 						)}
 						<button
 							type='submit'
@@ -96,30 +96,20 @@ const register = () => {
 							REGISTER
 						</button>
 						<p className='text-center'>
-							Already have an account?{" "}
+						Déjà un compte ?{" "}
 							<Link href='/login' className='text-[#C07F00]'>
-								Sign in
+								Se connecter
 							</Link>
 						</p>
 					</form>
 					<div className='absolute bottom-5 left-5'>
 						<p className='opacity-50 text-sm'>
-							<Link href='/'>EventTiz</Link> &copy; Copyright{" "}
+							<Link href='/'>Angle360 Event</Link> &copy; Copyright{" "}
 							{new Date().getFullYear()}{" "}
 						</p>
 					</div>
 				</div>
-				<div className='register md:w-[40%] h-[100vh] relative'>
-					<div className='absolute bottom-5 right-5'>
-						<a
-							href='https://github.com/dha-stix'
-							target='_blank'
-							className='text-gray-100'
-						>
-							Built by David Asaolu
-						</a>
-					</div>
-				</div>
+				
 			</main>
 		</div>
 	);

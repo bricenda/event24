@@ -19,10 +19,10 @@ const login = () => {
 	return (
 		<div>
 			<Head>
-				<title>Login | EventTiz</title>
+				<title>Connexion | Angle360 Event</title>
 				<meta
 					name='description'
-					content='An event ticketing system built with NextJS and Firebase'
+					content='Un système de billetterie événementielle'
 				/>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
@@ -30,13 +30,13 @@ const login = () => {
 			<main className='w-full flex items-center justify-between min-h-[100vh]'>
 				<div className='md:w-[60%] w-full flex flex-col items-center justify-center min-h-[100vh] px-[30px] py-[30px] relative'>
 					<Link href='/'>
-						<h2 className='text-2xl font-medium mb-6'>Log into your account</h2>
+						<h2 className='text-2xl font-medium mb-6'>Connectez-vous à votre compte</h2>
 					</Link>
 					<form
 						className='w-full flex flex-col justify-center'
 						onSubmit={handleSubmit}
 					>
-						<label htmlFor='email'>Email address</label>
+						<label htmlFor='email'>Email</label>
 						<div className='w-full relative'>
 							<input
 								type='email'
@@ -48,7 +48,7 @@ const login = () => {
 							/>
 							<HiMail className=' absolute left-4 top-3 text-gray-300 text-xl' />
 						</div>
-						<label htmlFor='password'>Password</label>
+						<label htmlFor='password'>Mot de passe</label>
 						<div className='w-full relative'>
 							<input
 								type='password'
@@ -68,30 +68,20 @@ const login = () => {
 							SIGN IN
 						</button>
 						<p className='text-center'>
-							Don't have an account?{" "}
+						Pas encore de compte ?{" "}
 							<Link href='/register' className='text-[#C07F00]'>
-								Register
+								S'inscrire
 							</Link>
 						</p>
 					</form>
 					<div className='absolute bottom-5 left-5'>
 						<p className='opacity-50 text-sm'>
-							<Link href='/'>EventTiz</Link> &copy; Copyright{" "}
+							<Link href='/'>Angle360 Event</Link> &copy; Copyright{" "}
 							{new Date().getFullYear()}{" "}
 						</p>
 					</div>
 				</div>
-				<div className='login md:w-[40%] h-[100vh] relative'>
-					<div className='absolute bottom-5 right-5'>
-						<a
-							href='https://github.com/dha-stix'
-							target='_blank'
-							className='text-gray-100'
-						>
-							Built by David Asaolu
-						</a>
-					</div>
-				</div>
+				
 			</main>
 		</div>
 	);
