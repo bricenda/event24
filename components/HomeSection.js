@@ -8,27 +8,27 @@ const HomeSection = () => {
 	const array = [
 		{
 			id: 1,
-			title: "Create an account",
-			content: `It is quick and hassle-free – get started in just a few simple steps!`,
+			title: "Créer un compte",
+			content: `C'est rapide et sans complications - commencez en quelques étapes simples !`,
 			image: createimage,
 		},
 		{
 			id: 2,
-			title: "Add an upcoming event",
-			content: "Create and manage your memorable events using EvenTiz",
+			title: "Ajouter un événement à venir",
+			content: "Créez et gérez vos événements inoubliables ",
 			image: event,
 		},
 		{
 			id: 3,
-			title: "Share your events",
+			title: "Partagez les événements",
 			content:
-				"Share your ticketing link with friends, they register and get their tickets, and you manage attendees.",
+				"Partagez votre lien de réservation avec vos contacts, ils s'inscrivent et obtiennent leurs billets, et vous vous chargez des participants.",
 			image: share,
 		},
 	];
 	return (
 		<div className='w-full bg-black  md:px-[20px] px-[10px] py-10 flex justify-center flex-col items-center'>
-			<h2 className='text-2xl text-[#ecbf66] mb-12'>How it works?</h2>
+			<h2 className='text-2xl text-[#ecbf66] mb-12'>Comment ça marche ?</h2>
 			<div className='flex flex-col space-y-[50px] w-full py-4 md:px-[50px] px-[10px]'>
 				{array.map((item) => (
 					<div

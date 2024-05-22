@@ -21,7 +21,7 @@ const Events = ({ events }) => {
 		<div className='w-full flex flex-col items-center py-[60px] px-[20px]'>
 			<Link href='/create/event'>
 				<button className='bg-[#FFD95A] border-[1px] px-6 py-4 rounded-lg mb-4'>
-					Create an event ticket
+				Créer un ticket d'événement
 				</button>
 			</Link>
 			<div className='w-full flex flex-wrap items-center justify-center'>
@@ -37,14 +37,14 @@ const Events = ({ events }) => {
 							<h2 className='text-xl font-medium mb-6'>{event.data.title}</h2>
 							<p className='opacity-80'>
 								{event.data.attendees.length > 0
-									? `${event.data.attendees.length} people registered`
-									: `No attendee yet`}
+									? `${event.data.attendees.length} personne(s) inscrite(s)`
+									: `Aucun participant`}
 							</p>
 							<p className='opacity-50'>
 								Time: {convertTo12HourFormat(event.data.time)}
 							</p>
 							<p className='opacity-50'>Date: {event.data.date}</p>
-							<p className='opacity-50'>Venue: {event.data.venue}</p>
+							<p className='opacity-50'>Lieu: {event.data.venue}</p>
 						</div>
 
 						<div className='w-full py-6 bg-[#C07F00] rounded-b-2xl flex items-center px-4 justify-between'>

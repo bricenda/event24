@@ -19,7 +19,7 @@ const AuthNav = ({ user }) => {
 					className='text-xl font-bold 
             '
 				>
-					EventTiz
+					Angle360 - Tableau de bord
 				</h1>
 			</Link>
 			<div className='md:flex hidden items-center justify-between'>
@@ -51,14 +51,14 @@ const AuthNav = ({ user }) => {
 					<div className='flex w-full flex-col space-y-8'>
 						<div className='flex items-center space-x-3 text-white hover:text-[#C07F00]'>
 							<FaUserAlt />
-							<p>{user["email"]?.substring(0, 6)}</p>
+							<p>{user["email"]?.substring(0, 30)}</p>
 						</div>
 						<Link
 							href='/'
 							className='hover:text-white text-[#C07F00]'
 							onClick={signOut}
 						>
-							Sign Out
+							Déconnexion
 						</Link>
 					</div>
 				</nav>

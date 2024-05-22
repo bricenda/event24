@@ -64,7 +64,7 @@ const Attendees = ({
 		<div className=' bg-white w-full p-8'>
 			<div className='flex flex-col md:flex-row items-center justify-between  mb-6'>
 				<h2 className='text-3xl font-bold md:mb-auto mb-4'>
-					List of Attendees
+					Liste des participants
 				</h2>
 				{!click && (
 					<button
@@ -73,7 +73,7 @@ const Attendees = ({
 						} text-white rounded-md bg-[#C07F00]`}
 						onClick={() => setDisableRegModal(true)}
 					>
-						Disable Registration
+						Annuler l'inscription
 					</button>
 				)}
 			</div>

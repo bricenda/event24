@@ -5,13 +5,13 @@ const Footer = () => {
 		<div className='w-full bg-[#edc16a] flex flex-col space-y-4 items-center justify-center p-6'>
 			<p>
 				{" "}
-				Powered by{" "}
+				Adapté par{" "}
 				<a
 					href='https://github.com/dha-stix'
 					target='_blank'
 					className='text-[#705a2f]'
 				>
-					David Asaolu
+					BN
 				</a>
 			</p>
 			<p className='opacity-50 text-sm'>
