@@ -7,7 +7,7 @@ const Footer = () => {
 				{" "}
 				Adapté par{" "}
 				<a
-					href='https://github.com/dha-stix'
+					href='https://bricenda.net'
 					target='_blank'
 					className='text-[#705a2f]'
 				>
